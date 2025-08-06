@@ -1,0 +1,14 @@
+package loops;
+import java .util.Scanner;
+public class Sum_N_numbers {
+    public static void main( String []args){
+        Scanner in = new Scanner( System.in);
+        System.out.println(" Enter the Number:");
+        int n = in.nextInt();
+        int  sum =0;
+        for( int i=1;i<=n;i++) {
+            sum += in.nextInt();
+
+        }System.out.println( " The sum of N Number: "+sum);
+    }
+}
