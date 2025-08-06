@@ -1,0 +1,26 @@
+package loops;
+import java.util.Scanner;
+public class Armstrongnumber {
+    public static void main( String []args){
+        Scanner input = new Scanner ( System.in);
+        System.out.println( " Enter the number:");
+        int A = input.nextInt();
+        int sum =0;
+        int reminder=0;
+        int cube=0;
+        while( A>0){
+            reminder = A%10;
+            cube = reminder*reminder*reminder;
+            sum= sum +cube;
+            A= A/10;
+        }
+        System.out.println("The sum of the digits of the number:"+sum);
+        if (sum == A){
+            System.out.println("The number is the Armstrong number.");
+        }
+        else{
+            System.out.println("The number is not the Armstrong number");
+        }
+
+    }
+}
