@@ -1,0 +1,26 @@
+
+package loops;
+import java .util.Scanner;
+public class Digits {
+    public static void main ( String []args ){
+        Scanner in = new Scanner(System.in );
+        System.out.println(" Enter the Number:");
+        int n = in.nextInt();
+        int sum=0;
+        int count =0;
+        int reminder=0;
+        int product =1;
+        while ( n>0){
+            reminder =n%10;
+            sum= sum + reminder;
+          product= product * reminder ;
+            count++;
+            n= n/10;
+        }
+        System.out.println("The sum of the digits :"+sum);
+        System.out.println("The count of the digits :"+count);
+        System.out.println("The product of the digits :"+product);
+        int subtract= product -sum;
+        System.out.println("The subtraction of the product and sum of the digits is:"+subtract );
+    }
+}
