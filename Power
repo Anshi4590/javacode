@@ -1,0 +1,8 @@
+package com;
+import java.util.Scanner;
+public class Power {
+    public static void main( String []args){
+    double result = Math.pow( 9,8);
+    System.out.println("The power of the number: "+result);
+    }
+}
